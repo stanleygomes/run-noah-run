@@ -1,27 +1,31 @@
-# 🦕 Noah Run
 
-An endless runner game, inspired by the classic T-Rex game that appears when you're offline in Google Chrome.
+# 🦕 Run Noah, Run
+
+Noah Run é um jogo endless runner inspirado no clássico T-Rex do Google Chrome, criado para ser jogado diretamente no navegador, sem necessidade de instalação ou dependências de backend. O objetivo é desviar de obstáculos, como cactos, e alcançar a maior pontuação possível. O projeto foi desenvolvido com foco em simplicidade, performance e visual retrô, utilizando apenas HTML, CSS puro e JavaScript.
+
+Ideal para quem busca diversão rápida, aprendizado em desenvolvimento web ou deseja contribuir com melhorias e novas funcionalidades. Abra o arquivo `index.html` ou rode localmente para jogar!
+
+<!--
+<div align="center">
+  <img src="assets/images/logo-banner.png" alt="Logo" />
+</div>
+-->
+
+## ⚡ Stack Tecnológica
+
+- **Linguagem**: Javascript
+- **Estilização**: Pure CSS
 
 ## 🚀 Rodar localmente
 
-Você pode rodar o Noah Run facilmente em localhost usando um dos métodos abaixo:
-
-### 1. Usando Live Server (VS Code)
-
-- Instale a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no VS Code.
-- Clique com o botão direito em `index.html` e selecione **Open with Live Server**.
-- O jogo abrirá automaticamente no navegador em `http://localhost:5500`.
-
-### 3. Usando Node.js
-
-Instale o servidor estático:
+Para rodar o Noah Run em ambiente local, basta utilizar o comando abaixo. Certifique-se de ter o Node.js (versão 18 ou superior) instalado:
 
 ```bash
-npm install -g serve
-serve .
+npm install
+npm start
 ```
 
-Acesse o endereço mostrado no terminal.
+O projeto será servido localmente usando a biblioteca `serve` instalada no próprio repositório. Acesse o endereço mostrado no terminal para jogar.
 
 > **Recomendação:** Use Node.js versão 18 ou superior para melhor compatibilidade.
 
@@ -34,6 +38,10 @@ Acesse o endereço mostrado no terminal.
 
 - **Space Bar** or **Up Arrow** - Jump over obstacles
 
-## License
+## 🤝 Como contribuir
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
