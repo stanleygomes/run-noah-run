@@ -38,10 +38,6 @@ O projeto será servido localmente usando a biblioteca `serve` instalada no pró
 
 - **Space Bar** or **Up Arrow** - Jump over obstacles
 
-## 🤝 Como contribuir
-
-Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
-
 ## 🏷️ Versionamento & Deploy
 
 Este projeto utiliza um fluxo automatizado para versionamento e deploy:
@@ -60,6 +56,10 @@ Este projeto utiliza um fluxo automatizado para versionamento e deploy:
        - Cria e publica uma nova tag no repositório.
 
 Esse fluxo garante rastreabilidade, organização e publicação contínua do projeto, sem necessidade de comandos manuais.
+
+## 🤝 Como contribuir
+
+Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
 
 ## 📜 Licença
 
