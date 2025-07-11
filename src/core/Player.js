@@ -86,6 +86,7 @@ export default class Player {
    */
   keydown = (event) => {
     if (event.code === "Space") {
+      event.preventDefault();
       this.jumpPressed = true;
     }
   };
