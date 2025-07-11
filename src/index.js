@@ -2,7 +2,7 @@
 // Responsável por inicializar, configurar e executar o loop do jogo
 import Player from "./core/Player.js";
 import Ground from "./core/Ground.js";
-import CactiController from "./core/ObstacleController.js";
+import ObstacleController from "./core/ObstacleController.js";
 import Score from "./core/Score.js";
 import { assets } from "./config.js";
 
@@ -22,10 +22,10 @@ const MAX_JUMP_HEIGHT = GAME_HEIGHT; // Altura máxima do pulo
 const MIN_JUMP_HEIGHT = 150; // Altura mínima do pulo
 const GROUND_WIDTH = 2400; // Largura do chão
 const GROUND_HEIGHT = 24; // Altura do chão
-const GROUND_AND_CACTUS_SPEED = 0.5; // Velocidade do chão e obstáculos
+const GROUND_AND_OBSTACLE_SPEED = 0.5; // Velocidade do chão e obstáculos
 
-// Configuração dos obstáculos (cactos)
-const CACTI_CONFIG = [
+// Configuração dos obstáculos
+const OBSTACLE_CONFIG = [
   { width: 48 / 1.5, height: 100 / 1.5, image: assets.images.obstacle1 },
   { width: 98 / 1.5, height: 100 / 1.5, image: assets.images.obstacle2 },
   { width: 68 / 1.5, height: 70 / 1.5, image: assets.images.obstacle3 },
@@ -34,7 +34,7 @@ const CACTI_CONFIG = [
 // Objetos principais do jogo
 let player = null;
 let ground = null;
-let cactiController = null;
+let obstacleController = null;
 let score = null;
 
 // Variáveis de estado do jogo
@@ -73,26 +73,26 @@ function createSprites() {
     ctx,
     groundWidthInGame,
     groundHeightInGame,
-    GROUND_AND_CACTUS_SPEED,
+    GROUND_AND_OBSTACLE_SPEED,
     scaleRatio
   );
 
   // Inicializa os obstáculos
-  const cactiImages = CACTI_CONFIG.map((cactus) => {
+  const cactiImages = OBSTACLE_CONFIG.map((obstacle) => {
     const image = new Image();
-    image.src = cactus.image;
+    image.src = obstacle.image;
     return {
       image: image,
-      width: cactus.width * scaleRatio,
-      height: cactus.height * scaleRatio,
+      width: obstacle.width * scaleRatio,
+      height: obstacle.height * scaleRatio,
     };
   });
 
-  cactiController = new CactiController(
+  obstacleController = new ObstacleController(
     ctx,
     cactiImages,
     scaleRatio,
-    GROUND_AND_CACTUS_SPEED
+    GROUND_AND_OBSTACLE_SPEED
   );
 
   // Inicializa o placar
@@ -174,7 +174,7 @@ function reset() {
   gameOver = false;
   waitingToStart = false;
   ground.reset();
-  cactiController.reset();
+  obstacleController.reset();
   score.reset();
   gameSpeed = GAME_SPEED_START;
 }
@@ -225,14 +225,14 @@ function gameLoop(currentTime) {
   if (!gameOver && !waitingToStart) {
     // Atualiza objetos do jogo
     ground.update(gameSpeed, frameTimeDelta);
-    cactiController.update(gameSpeed, frameTimeDelta);
+    obstacleController.update(gameSpeed, frameTimeDelta);
     player.update(gameSpeed, frameTimeDelta);
     score.update(frameTimeDelta);
     updateGameSpeed(frameTimeDelta);
   }
 
   // Verifica colisão entre player e obstáculos
-  if (!gameOver && cactiController.collideWith(player)) {
+  if (!gameOver && obstacleController.collideWith(player)) {
     gameOver = true;
     setupGameReset();
     score.setHighScore();
@@ -240,7 +240,7 @@ function gameLoop(currentTime) {
 
   // Desenha objetos do jogo
   ground.draw();
-  cactiController.draw();
+  obstacleController.draw();
   player.draw();
   score.draw();
 
