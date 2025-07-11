@@ -5,7 +5,8 @@
   "scripts": {
     "start": "serve .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "release": "standard-version && git push --follow-tags origin $(git rev-parse --abbrev-ref HEAD)"
   },
   "browserslist": [
     ">0.2%",
@@ -15,7 +16,8 @@
   ],
   "devDependencies": {
     "prettier": "^3.6.2",
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "standard-version": "^9.5.0"
   },
   "engines": {
     "node": ">=18"
