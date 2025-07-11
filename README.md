@@ -20,7 +20,7 @@ Ideal para quem busca diversão rápida, aprendizado em desenvolvimento web ou d
 
 ## 🚀 Rodar localmente
 
-Para rodar o Noah Run em ambiente local, basta utilizar o comando abaixo. Certifique-se de ter o Node.js (versão 18 ou superior) instalado:
+Para rodar o Run Noah Run em ambiente local, basta utilizar o comando abaixo. Certifique-se de ter o Node.js (versão 18 ou superior) instalado:
 
 ```bash
 npm install
@@ -62,6 +62,10 @@ Esse fluxo garante rastreabilidade, organização e publicação contínua do pr
 ## 🤝 Como contribuir
 
 Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
+
+## Créditos
+
+O motor e a lógica do jogo foram adaptados a partir do excelente trabalho do repositório [dino-game](https://github.com/CodingWith-Adam/dino-game) criado por [CodingWith-Adam](https://github.com/CodingWith-Adam).
 
 ## 📜 Licença
 
