@@ -19,13 +19,40 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="public/images/apple-touch-icon.png" />
 
+    <!-- Fonte retrô do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/global.css" />
   </head>
   <body>
-    <canvas id="game"></canvas>
-
+    <h1>Run Noah, Run</h1>
+    <div class="game-container">
+      <canvas id="game"></canvas>
+    </div>
+    <main>
+      <div class="button-container">
+        <button id="interagir">JOGAR / INTERAGIR</button>
+      </div>
+      <section>
+        <h2>Sobre o Jogo</h2>
+        <p>🕹️ Run Noah, Run é um jogo inspirado no clássico do dinossauro offline do Chrome. Corra, desvie dos cactos e tente bater seu recorde!</p>
+        <h3>Como Jogar</h3>
+        <ul>
+          <li>Pressione <b>Espaço</b> ou clique no botão acima para pular.</li>
+          <li>Desvie dos obstáculos para continuar correndo.</li>
+          <li>Tente alcançar a maior pontuação possível!</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <div class="footer-links">
+        <a href="https://github.com/stanleygomes/run-noah-run" target="_blank">Repositório</a>
+        <a href="LICENSE" target="_blank">Licença</a>
+        <a href="CONTRIBUTING.md" target="_blank">Contribua</a>
+      </div>
+      <div class="footer-copy">&copy; 2025 Run Noah, Run</div>
+    </footer>
     <script src="src/index.js" defer type="module"></script>
-
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -33,6 +60,5 @@
         });
       }
     </script>
-
   </body>
 </html>
