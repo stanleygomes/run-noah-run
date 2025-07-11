@@ -29,6 +29,8 @@ const OBSTACLE_CONFIG = [
   { width: 48 / 1.5, height: 100 / 1.5, image: assets.images.obstacle1 },
   { width: 98 / 1.5, height: 100 / 1.5, image: assets.images.obstacle2 },
   { width: 68 / 1.5, height: 70 / 1.5, image: assets.images.obstacle3 },
+  { width: 98 / 1.5, height: 100 / 1.5, image: assets.images.obstacle4 },
+  { width: 68 / 1.5, height: 70 / 1.5, image: assets.images.obstacle5 },
 ];
 
 // Objetos principais do jogo
