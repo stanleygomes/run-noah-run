@@ -21,7 +21,10 @@ Ideal para quem busca diversão rápida, aprendizado em desenvolvimento web ou d
 Para rodar o Noah Run em ambiente local, basta utilizar o comando abaixo. Certifique-se de ter o Node.js (versão 18 ou superior) instalado:
 
 ```bash
+# instalar dependencias
 npm install
+
+# iniciar app
 npm start
 ```
 
