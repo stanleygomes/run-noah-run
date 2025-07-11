@@ -1,5 +1,6 @@
 // Classe responsável pelo jogador (personagem principal)
 import { assets } from "../config.js";
+
 export default class Player {
   // Tempo entre frames da animação de corrida
   WALK_ANIMATION_TIMER = 200;
@@ -50,6 +51,20 @@ export default class Player {
     playerRunImage2.src = assets.images.playerRun2;
     this.playerRunImages.push(playerRunImage1);
     this.playerRunImages.push(playerRunImage2);
+
+    //keyboard
+    window.removeEventListener('keydown', this.keydown);
+    window.removeEventListener('keyup', this.keyup);
+
+    window.addEventListener('keydown', this.keydown);
+    window.addEventListener('keyup', this.keyup);
+
+    //touch
+    window.removeEventListener('touchstart', this.touchstart);
+    window.removeEventListener('touchend', this.touchend);
+
+    window.addEventListener('touchstart', this.touchstart);
+    window.addEventListener('touchend', this.touchend);
   }
 
   /**
