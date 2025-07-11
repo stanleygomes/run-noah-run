@@ -1,7 +1,7 @@
 
-# 🦕 Run Noah, Run
+# 🕹️ Run Noah, Run
 
-## 🕹️ A aventura começa quando a internet acaba!
+## A aventura começa quando a internet acaba!
 
 Noah Run é um jogo endless runner inspirado no clássico T-Rex do Google Chrome, criado para ser jogado diretamente no navegador, sem necessidade de instalação ou dependências de backend. O objetivo é desviar de obstáculos, como cactos, e alcançar a maior pontuação possível. O projeto foi desenvolvido com foco em simplicidade, performance e visual retrô, utilizando apenas HTML, CSS puro e JavaScript.
 
