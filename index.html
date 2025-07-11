@@ -8,20 +8,19 @@
     <meta name="description" content="🕹️ A aventura começa quando a internet acaba!" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="icon" href="public/images/apple-touch-icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="public/images/apple-touch-icon.png" />
+    <link rel="icon" href="/assets/images/apple-touch-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="public/manifest.json" />
+    <link rel="manifest" href="/assets/manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Noah Run" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="public/images/apple-touch-icon.png" />
+    <meta name="msapplication-TileImage" content="/assets/images/apple-touch-icon.png" />
 
-    <!-- Fonte retrô do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style/global.css" />
+    <link rel="stylesheet" href="/src/style/global.css" />
   </head>
   <body>
     <h1>Run Noah, Run</h1>
@@ -52,11 +51,11 @@
       </div>
       <div class="footer-copy">&copy; 2025 Run Noah, Run</div>
     </footer>
-    <script src="src/index.js" defer type="module"></script>
+    <script src="/src/index.js" defer type="module"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('public/service-worker.js');
+          navigator.serviceWorker.register('/assets/service-worker.js');
         });
       }
     </script>
