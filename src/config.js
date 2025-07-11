@@ -11,4 +11,5 @@ export const assets = {
     obstacle5: 'src/assets/images/obstacle_5.png',
     background: 'src/assets/images/background.png',
   },
+  font: "'Press Start 2P', monospace",
 };

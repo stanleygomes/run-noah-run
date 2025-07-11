@@ -146,8 +146,8 @@ function getScaleRatio() {
  * Exibe a mensagem de Game Over na tela
  */
 function showGameOver() {
-  const fontSize = 70 * scaleRatio;
-  ctx.font = `${fontSize}px Verdana`;
+  const fontSize = 50 * scaleRatio;
+  ctx.font = `${fontSize}px ${assets.font}`;
   ctx.fillStyle = "grey";
   const x = canvas.width / 4.5;
   const y = canvas.height / 2;
@@ -185,8 +185,8 @@ function reset() {
  * Exibe a mensagem de início do jogo na tela
  */
 function showStartGameText() {
-  const fontSize = 40 * scaleRatio;
-  ctx.font = `${fontSize}px Verdana`;
+  const fontSize = 20 * scaleRatio;
+  ctx.font = `${fontSize}px ${assets.font}`;
   ctx.fillStyle = "grey";
   const x = canvas.width / 14;
   const y = canvas.height / 2;
