@@ -42,6 +42,25 @@ O projeto será servido localmente usando a biblioteca `serve` instalada no pró
 
 Suas contribuições são muito bem-vindas! Para colaborar com o projeto de forma eficiente e seguindo nossas diretrizes, consulte o guia completo no [CONTRIBUTING.md](CONTRIBUTING.md). Lá você encontrará um passo a passo detalhado, padrões de commit, regras de validação e dicas importantes para garantir que sua contribuição seja aceita rapidamente.
 
+## 🏷️ Versionamento & Deploy
+
+Este projeto utiliza um fluxo automatizado para versionamento e deploy:
+
+1. **Pull Request (PR):**
+   - Todo novo código deve ser enviado via PR para a branch `master`.
+   - O workflow do GitHub Actions (`pr-checks.yml`) valida os commits (padrão Conventional Commits) e a formatação do código (Prettier).
+   - O PR só pode ser aprovado se todos os checks passarem.
+
+2. **Merge na master:**
+   - Ao aprovar e fazer merge do PR na branch `master`, dois processos automáticos são disparados:
+     - **Deploy na Vercel:** O projeto é publicado automaticamente na Vercel, tornando a nova versão disponível online.
+     - **Versionamento automático:** O workflow (`release.yml`) executa o `standard-version`, que:
+       - Atualiza o changelog.
+       - Incrementa a versão no `package.json`.
+       - Cria e publica uma nova tag no repositório.
+
+Esse fluxo garante rastreabilidade, organização e publicação contínua do projeto, sem necessidade de comandos manuais.
+
 ## 📜 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
