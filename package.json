@@ -1,0 +1,20 @@
+{
+  "name": "run-noah-run",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "serve ."
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
