@@ -7,11 +7,9 @@ Noah Run é um jogo endless runner inspirado no clássico T-Rex do Google Chrome
 
 Ideal para quem busca diversão rápida, aprendizado em desenvolvimento web ou deseja contribuir com melhorias e novas funcionalidades. Abra o arquivo `index.html` ou rode localmente para jogar!
 
-<!--
 <div align="center">
-  <img src="assets/images/logo-banner.png" alt="Logo" />
+  <img src="assets/images/banner.png" alt="banner" />
 </div>
--->
 
 ## ⚡ Stack Tecnológica
 
