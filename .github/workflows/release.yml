@@ -1,3 +1,6 @@
+# Requisitos:
+# Configuração do repositório: Vá em Settings > Actions > General e na seção "Workflow permissions", certifique-se de que está marcado "Read and write permissions" E que "Allow GitHub Actions to create and approve pull requests" está HABILITADO
+
 name: Release
 
 on:

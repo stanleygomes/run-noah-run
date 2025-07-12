@@ -50,10 +50,11 @@ Este projeto utiliza um fluxo automatizado para versionamento e deploy:
 2. **Merge na master:**
    - Ao aprovar e fazer merge do PR na branch `master`, dois processos automáticos são disparados:
      - **Deploy na Vercel:** O projeto é publicado automaticamente na Vercel, tornando a nova versão disponível online.
-     - **Versionamento automático:** O workflow (`release.yml`) executa o `standard-version`, que:
+     - **Versionamento automático:** O workflow (`release.yml`) executa o `semantic-release`, que:
        - Atualiza o changelog.
        - Incrementa a versão no `package.json`.
-       - Cria e publica uma nova tag no repositório.
+       - Cria e publica uma nova tag no repositório automaticamente.
+       - Abre um Pull Request com as mudanças do changelog que precisa ser aprovado para refletir no repositório.
 
 Esse fluxo garante rastreabilidade, organização e publicação contínua do projeto, sem necessidade de comandos manuais.
 
