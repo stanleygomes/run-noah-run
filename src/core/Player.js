@@ -67,24 +67,24 @@ export default class Player {
     window.addEventListener('keyup', this.keyup);
 
     //touch
-    window.removeEventListener('touchstart', this.touchstart);
-    window.removeEventListener('touchend', this.touchend);
+    this.canvas.removeEventListener('touchstart', this.touchstart);
+    this.canvas.removeEventListener('touchend', this.touchend);
 
-    window.addEventListener('touchstart', this.touchstart);
-    window.addEventListener('touchend', this.touchend);
+    this.canvas.addEventListener('touchstart', this.touchstart);
+    this.canvas.addEventListener('touchend', this.touchend);
   }
 
   /**
    * Evento de toque para iniciar o pulo
    */
-  touchstart = () => {
+  touchstart = (event) => {
     this.jumpPressed = true;
   };
 
   /**
    * Evento de toque para finalizar o pulo
    */
-  touchend = () => {
+  touchend = (event) => {
     this.jumpPressed = false;
   };
 
