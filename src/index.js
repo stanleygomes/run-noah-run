@@ -26,11 +26,11 @@ const GROUND_AND_OBSTACLE_SPEED = 0.5; // Velocidade do chão e obstáculos
 
 // Configuração dos obstáculos
 const OBSTACLE_CONFIG = [
-  { width: 48 / 1.5, height: 100 / 1.5, image: assets.images.obstacle1 },
-  { width: 98 / 1.5, height: 100 / 1.5, image: assets.images.obstacle2 },
-  { width: 68 / 1.5, height: 70 / 1.5, image: assets.images.obstacle3 },
-  { width: 98 / 1.5, height: 100 / 1.5, image: assets.images.obstacle4 },
-  { width: 68 / 1.5, height: 70 / 1.5, image: assets.images.obstacle5 },
+  { width: 121 / 1.5, height: 80 / 1.5, image: assets.images.obstacle1 },
+  { width: 68 / 1.5, height: 60 / 1.5, image: assets.images.obstacle2 },
+  { width: 121 / 1.5, height: 100 / 1.5, image: assets.images.obstacle3 },
+  { width: 130 / 1.5, height: 80 / 1.5, image: assets.images.obstacle4 },
+  { width: 64 / 1.5, height: 70 / 1.5, image: assets.images.obstacle5 },
 ];
 
 // Objetos principais do jogo
@@ -205,7 +205,7 @@ function updateGameSpeed(frameTimeDelta) {
  * Limpa o canvas para desenhar o próximo frame
  */
 function clearScreen() {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "#f3ddab";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
