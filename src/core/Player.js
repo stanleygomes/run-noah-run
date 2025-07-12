@@ -44,6 +44,13 @@ export default class Player {
     this.standingStillImage.src = assets.images.player;
     this.image = this.standingStillImage;
 
+    // Imagem do personagem no Game Over
+    this.gameOverImage = new Image();
+    this.gameOverImage.src = assets.images.playerGameOver;
+
+    // Estado do jogo
+    this.isGameOver = false;
+
     // Imagens de animação de corrida
     const playerRunImage1 = new Image();
     playerRunImage1.src = assets.images.playerRun1;
@@ -106,13 +113,15 @@ export default class Player {
    * @param {number} frameTimeDelta - Delta de tempo do frame
    */
   update(gameSpeed, frameTimeDelta) {
-    this.run(gameSpeed, frameTimeDelta);
+    if (!this.isGameOver) {
+      this.run(gameSpeed, frameTimeDelta);
 
-    if (this.jumpInProgress) {
-      this.image = this.standingStillImage;
+      if (this.jumpInProgress) {
+        this.image = this.standingStillImage;
+      }
+
+      this.jump(frameTimeDelta);
     }
-
-    this.jump(frameTimeDelta);
   }
 
   /**
@@ -164,6 +173,26 @@ export default class Player {
       this.walkAnimationTimer = this.WALK_ANIMATION_TIMER;
     }
     this.walkAnimationTimer -= frameTimeDelta * gameSpeed;
+  }
+
+  /**
+   * Define o estado de Game Over para o personagem
+   */
+  setGameOver() {
+    this.isGameOver = true;
+    this.image = this.gameOverImage;
+  }
+
+  /**
+   * Reseta o estado do personagem para o início do jogo
+   */
+  reset() {
+    this.isGameOver = false;
+    this.image = this.standingStillImage;
+    this.y = this.yStandingPosition;
+    this.jumpInProgress = false;
+    this.falling = false;
+    this.jumpPressed = false;
   }
 
   /**

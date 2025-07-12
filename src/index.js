@@ -177,6 +177,7 @@ function reset() {
   waitingToStart = false;
   ground.reset();
   obstacleController.reset();
+  player.reset();
   score.reset();
   gameSpeed = GAME_SPEED_START;
 }
@@ -187,7 +188,7 @@ function reset() {
 function showStartGameText() {
   const fontSize = 20 * scaleRatio;
   ctx.font = `${fontSize}px ${assets.font}`;
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = assets.colors.text;
   const x = canvas.width / 14;
   const y = canvas.height / 2;
   ctx.fillText("Tap Screen or Press Space To Start", x, y);
@@ -205,7 +206,7 @@ function updateGameSpeed(frameTimeDelta) {
  * Limpa o canvas para desenhar o próximo frame
  */
 function clearScreen() {
-  ctx.fillStyle = "#f3ddab";
+  ctx.fillStyle = assets.colors.background;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -236,6 +237,7 @@ function gameLoop(currentTime) {
   // Verifica colisão entre player e obstáculos
   if (!gameOver && obstacleController.collideWith(player)) {
     gameOver = true;
+    player.setGameOver();
     setupGameReset();
     score.setHighScore();
   }
