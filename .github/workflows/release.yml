@@ -26,9 +26,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Run standard-version
         run: npx standard-version
-      - name: Authenticate with GitHub
-        run: git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
-      - name: Push changes and tags
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: git push --follow-tags origin master
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release-auto
+          title: 'Release: automatic version'
+          body: 'This PR was created by Github Bot.'
+          base: master
