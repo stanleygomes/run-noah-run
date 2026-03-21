@@ -101,3 +101,5 @@ O motor e a lógica do jogo foram adaptados a partir do excelente trabalho do re
 ## 📜 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+Made with 🔥 by Lumen HQ
