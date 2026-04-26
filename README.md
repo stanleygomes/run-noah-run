@@ -1,15 +1,21 @@
-
 # 🕹️ Run Noah, Run
+
+<div align="center">
+  <a href="https://run-noah-run.vercel.app/" target="_blank">
+    <img src="assets/images/banner.png" alt="banner" />
+  </a>
+  <br /><br /><br />
+  <a href="https://run-noah-run.vercel.app/" target="_blank">
+    <strong>🚀 Clique aqui para jogar o Run Noah Run online!</strong>
+  </a>
+  <br /><br />
+</div>
 
 ## A aventura começa quando a internet acaba!
 
 Noah Run é um jogo endless runner inspirado no clássico T-Rex do Google Chrome, criado para ser jogado diretamente no navegador, sem necessidade de instalação ou dependências de backend. O objetivo é desviar de obstáculos, como cactos, e alcançar a maior pontuação possível. O projeto foi desenvolvido com foco em simplicidade, performance e visual retrô, utilizando apenas HTML, CSS puro e JavaScript.
 
 Ideal para quem busca diversão rápida, aprendizado em desenvolvimento web ou deseja contribuir com melhorias e novas funcionalidades. Abra o arquivo `index.html` ou rode localmente para jogar!
-
-<div align="center">
-  <img src="assets/images/banner.png" alt="banner" />
-</div>
 
 ## ⚡ Stack Tecnológica
 
@@ -71,12 +77,12 @@ Por favor, siga nosso código de conduta em todas as interações com o projeto.
 2. **Faça commits pequenos e focados**: Cada commit deve representar uma alteração lógica única. Evite commits grandes com muitas mudanças não relacionadas. Isso facilita a revisão e validação do código.
 
 3. **Padrão de mensagens de commit**: Todos os commits devem seguir a especificação [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) (Versionamento Semântico). Exemplos:
-  - `feat: adicionar funcionalidade de login do usuário`
-  - `fix: corrigir bug no login`
-  - `chore: atualizar dependências`
-  - `docs: atualizar README`
-  - `test: adicionar testes para login`
 
+- `feat: adicionar funcionalidade de login do usuário`
+- `fix: corrigir bug no login`
+- `chore: atualizar dependências`
+- `docs: atualizar README`
+- `test: adicionar testes para login`
 
 > **Recomendações:**
 >
@@ -90,7 +96,7 @@ Por favor, siga nosso código de conduta em todas as interações com o projeto.
 
 4. **Pull Request (PR)**: Abra um PR para a `master` com um título claro e descritivo. Na descrição do PR, explique o que está sendo feito e por quê. Referencie issues relacionadas, se aplicável.
 
-6. **Release e Deploy**: Para detalhes sobre deploy e versionamento, consulte a [seção de Versionamento no README.md](./README.md).
+5. **Release e Deploy**: Para detalhes sobre deploy e versionamento, consulte a [seção de Versionamento no README.md](./README.md).
 
 Esse fluxo garante qualidade, rastreabilidade e entrega contínua de valor. Seguindo essas orientações você evita erros e agiliza o processo de revisão e release.
 
