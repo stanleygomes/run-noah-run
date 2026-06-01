@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.0.0 (2026-06-01)
+
+### Bug Fixes
+
+* ajuste pasta public para vercel ([12d465e](https://github.com/stanleygomes/run-noah-run/commit/12d465e5e99183144e86e47232922cd1a3f6c2d2))
+* bug ao usar tap no mobile ([db8fe26](https://github.com/stanleygomes/run-noah-run/commit/db8fe264fbdd333a944622d8b74fab4b557cfba0))
+* correcao bug ao apertar tecla espaco ([7cee34c](https://github.com/stanleygomes/run-noah-run/commit/7cee34cd1613e44fad1a1c09e5250a6a1cf25806))
+* correcao de pulo do player ([c49004e](https://github.com/stanleygomes/run-noah-run/commit/c49004e26b9ce166b6216ed12b184d42831f1849))
+
+### Features
+
+* ajustes  para rodar como pwa ([73c69cb](https://github.com/stanleygomes/run-noah-run/commit/73c69cb77bd4fd0a5291bd375254e7134372a3e1))
+* botao de pular na tela em mobile ([04266ea](https://github.com/stanleygomes/run-noah-run/commit/04266ea6a070d6c18e0c398548c221237daa0d3d))
+* font pixel no canva ([7ba5db0](https://github.com/stanleygomes/run-noah-run/commit/7ba5db0f844d7c9aa3f9f25bfbf8ef67b45ebe0f))
+* imagens oficiais do jogo - assets ([75169f8](https://github.com/stanleygomes/run-noah-run/commit/75169f82ad109c4596b9fd6dbdf321e737b943bd))
+* melhorar o index.html ([e2006a4](https://github.com/stanleygomes/run-noah-run/commit/e2006a498bfabb94ad55ada7e2ae062a7f21d28e))
+* movendo arquivos para pasta src ([62f5e45](https://github.com/stanleygomes/run-noah-run/commit/62f5e459a3e96f57a0cf5d23a25ab5f1a944446b))
+* mudando player tela game over ([e61d07d](https://github.com/stanleygomes/run-noah-run/commit/e61d07d3f2ee5e945777264634b233779748a12d))
+* primera versao do layout base ([6f1b898](https://github.com/stanleygomes/run-noah-run/commit/6f1b89884a6ebfc65e2cff04257daf745dd5b97e))
+* refatoracao e documentacao codigo core ([6cd9b1a](https://github.com/stanleygomes/run-noah-run/commit/6cd9b1a9764cb4729063c455e80cd4f651869c9a))
+
 ## [0.2.0](https://github.com/stanleygomes/run-noah-run/compare/v0.1.0...v0.2.0) (2025-07-12)
 
 ### Bug Fixes
